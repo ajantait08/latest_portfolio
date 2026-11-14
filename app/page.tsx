@@ -582,7 +582,7 @@ export default function Portfolio() {
     const styleEl = document.createElement("style");
     styleEl.textContent = GLOBAL_CSS;
     document.head.appendChild(styleEl);
-    return () => document.head.removeChild(styleEl);
+    return () => { document.head.removeChild(styleEl); };
   }, []);
 
   return (
