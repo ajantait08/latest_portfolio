@@ -558,7 +558,7 @@ function useReveal() {
   }, []);
 }
 
-function useActiveNav(sections) {
+function useActiveNav(sections: string[]) {
   const [active, setActive] = useState("hero");
   useEffect(() => {
     const io = new IntersectionObserver(
